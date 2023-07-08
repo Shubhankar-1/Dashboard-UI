@@ -2,3 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    transition-duration: 200ms;
+}
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}
+@layer base {
+    .font-face-r {
+        font-family: "Roboto";
+    }
+    body {
+        @apply !bg-[#f7f8fa] !font-face-r noSelect;
+    }
+
+    html {
+        @apply !scroll-smooth;
+    }
+}
+
+@layer components {
+    .headerLink {
+        @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s]
+        hover:text-[#b3b3b3];
+    }
+
+    .whitecircle {
+        @apply bg-white text-[#7d8fb3] w-12 h-12 p-3 rounded-full;
+    }
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"),
+        url("../assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
