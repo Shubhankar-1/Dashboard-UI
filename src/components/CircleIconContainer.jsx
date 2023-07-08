@@ -3,11 +3,16 @@ import { Badge, Icon, colors } from "@mui/material";
 // import { Icon } from "@chakra-ui/react";
 import React from "react";
 
-function CircleIconContainer({ icon, notificationDotColor }) {
+function CircleIconContainer({
+    icon,
+    notificationDotColor,
+    size = "w-12 h-12",
+}) {
     return (
-        <div className="bg-white relative flex justify-center items-center w-12 h-12 rounded-full p-2 shadow-sm hover:shadow-md text-[#c3cad9] hover:text-[#8f95a1] !duration-0 !cursor-pointer">
+        <div
+            className={`${size} bg-white relative flex justify-center items-center rounded-full p-2 shadow-sm hover:shadow-md text-[#c3cad9] hover:text-[#8f95a1] !duration-0 !cursor-pointer`}>
             {notificationDotColor ? (
-                <div className={`z-50 absolute -top-2 right-1`}>
+                <div className={` absolute -top-2 right-1`}>
                     <svg
                         fill={notificationDotColor}
                         width="20px"
@@ -20,7 +25,7 @@ function CircleIconContainer({ icon, notificationDotColor }) {
             ) : null}
 
             {/* <Icon  /> */}
-            <div className={`text-2xl`}>{icon}</div>
+            <div className={` text-2xl`}>{icon}</div>
         </div>
     );
 }
