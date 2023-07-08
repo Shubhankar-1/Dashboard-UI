@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-    transition-duration: 200ms;
+    transition-duration: 150ms;
 }
 .noSelect {
     -webkit-tap-highlight-color: transparent;
@@ -22,7 +22,7 @@
         font-family: "Roboto";
     }
     body {
-        @apply !bg-[#f7f8fa] !font-face-r noSelect;
+        @apply !bg-[#f7f8fa] text-[#7d8fb3] !font-face-r noSelect;
     }
 
     html {
@@ -37,6 +37,10 @@
 
     .whitecircle {
         @apply bg-white text-[#7d8fb3] w-12 h-12 p-3 rounded-full;
+    }
+
+    .darkgrayblue{
+        @apply text-[#4d5e80];
     }
 }
 
