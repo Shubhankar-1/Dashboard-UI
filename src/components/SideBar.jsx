@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import CircleIconContainer from "./CircleIconContainer";
+
 import { AiFillStar, AiOutlineRise } from "react-icons/ai";
 import {
     FaCompass,
@@ -7,7 +9,6 @@ import {
     FaGlobeAmericas,
 } from "react-icons/fa";
 import { MdLocationCity } from "react-icons/md";
-import CircleIcon from "./CircleIconContainer";
 import { Avatar } from "@mui/material";
 import avatar1 from "../assets/Avatar/Avatar1.jpg";
 import avatar3 from "../assets/Avatar/Avatar2.jpg";
@@ -20,18 +21,18 @@ import { IoMdAddCircle } from "react-icons/io";
 
 function SideBar() {
     return (
-        <div className="flex flex-col -z-10 p-6 justify-between mr-2 sticky left-0 top-0 border min-h-screen h-full w-24 bg-[#f7f8fa]">
+        <div className="flex flex-col -z-10 p-6 justify-between mr-2 sticky left-0 top-0 border h-screen w-24 bg-[#f7f8fa]">
             {/* Sidebar Navigations */}
             <div className="flex flex-col gap-3">
-                <CircleIcon icon={<FaCompass color="#3361ff" />} />
-                <CircleIcon icon={<AiFillStar />} />
-                <CircleIcon
+                <CircleIconContainer icon={<FaCompass color="#3361ff" />} />
+                <CircleIconContainer icon={<AiFillStar />} />
+                <CircleIconContainer
                     icon={<FaFacebookMessenger />}
                     notificationDotColor="#3361ff"
                 />
-                <CircleIcon icon={<AiOutlineRise />} />
-                <CircleIcon icon={<FaGlobeAmericas />} />
-                <CircleIcon icon={<MdLocationCity />} />
+                <CircleIconContainer icon={<AiOutlineRise />} />
+                <CircleIconContainer icon={<FaGlobeAmericas />} />
+                <CircleIconContainer icon={<MdLocationCity />} />
             </div>
 
             {/* Avatars */}
@@ -55,7 +56,7 @@ function SideBar() {
                 <Avatar sx={{ width: 45, height: 45 }}>
                     <Image src={avatar4} alt="avatar" />
                 </Avatar>
-                <CircleIcon icon={<IoMdAddCircle />} />
+                <CircleIconContainer icon={<IoMdAddCircle />} />
             </div>
         </div>
     );

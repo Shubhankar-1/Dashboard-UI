@@ -5,7 +5,7 @@ import React from "react";
 
 function CircleIconContainer({ icon, notificationDotColor }) {
     return (
-        <div className="bg-white relative w-12 h-12 rounded-full p-3 shadow-sm hover:shadow-md text-[#c3cad9] hover:text-[#8f95a1] !duration-0 !cursor-pointer">
+        <div className="bg-white relative flex justify-center items-center w-12 h-12 rounded-full p-2 shadow-sm hover:shadow-md text-[#c3cad9] hover:text-[#8f95a1] !duration-0 !cursor-pointer">
             {notificationDotColor ? (
                 <div className={`z-50 absolute -top-2 right-1`}>
                     <svg
@@ -20,7 +20,7 @@ function CircleIconContainer({ icon, notificationDotColor }) {
             ) : null}
 
             {/* <Icon  /> */}
-            <div className={` text-2xl`}>{icon}</div>
+            <div className={`text-2xl`}>{icon}</div>
         </div>
     );
 }
