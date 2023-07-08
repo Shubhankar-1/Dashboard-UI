@@ -17,7 +17,7 @@ function Avatars({ image, width = 45, height = 45, dotColor }) {
                     </svg>
                 </div>
             ) : null}
-            <Avatar sx={{ width: width, height: height }}>
+            <Avatar src={image} sx={{ width: width, height: height }}>
                 <Image src={image} alt="avatar" />
             </Avatar>
         </div>

@@ -18,6 +18,7 @@ import Image from "next/image";
 
 import { Badge } from "@mui/material";
 import { IoMdAddCircle } from "react-icons/io";
+import Avatars from "./Avatars";
 
 function SideBar() {
     return (
@@ -37,25 +38,10 @@ function SideBar() {
 
             {/* Avatars */}
             <div className=" flex flex-col gap-3">
-                <Badge
-                    overlap="circular"
-                    anchorOrigin={{ vertical: "top", horizontal: "right" }}
-                    badgeContent={
-                        <div className="bg-[#3361ff] w-2 h-2 rounded-full"></div>
-                    }>
-                    <Avatar sx={{ width: 45, height: 45 }}>
-                        <Image src={avatar2} alt="avatar" />
-                    </Avatar>
-                </Badge>
-                <Avatar sx={{ width: 45, height: 45 }}>
-                    <Image src={avatar3} alt="avatar" />
-                </Avatar>
-                <Avatar sx={{ width: 45, height: 45 }}>
-                    <Image src={avatar1} alt="avatar" />
-                </Avatar>
-                <Avatar sx={{ width: 45, height: 45 }}>
-                    <Image src={avatar4} alt="avatar" />
-                </Avatar>
+                <Avatars image={avatar2} dotColor="#3361ff" />
+                <Avatars image={avatar3} />
+                <Avatars image={avatar1} />
+                <Avatars image={avatar4} />
                 <CircleIconContainer icon={<IoMdAddCircle />} />
             </div>
         </div>

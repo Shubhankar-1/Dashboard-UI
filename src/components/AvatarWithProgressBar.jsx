@@ -1,13 +1,12 @@
 import { Avatar, Badge, CircularProgress } from '@mui/material';
 import Image from 'next/image';
 import React from 'react'
+import Avatars from './Avatars';
 
 function AvatarWithProgressBar({avatar, progress}) {
   return (
       <div className="relative inline-block">
-          <Avatar className="bg-[#ffcb3366]" sx={{ width: 110, height: 110 }}>
-              <Image src={avatar} alt="avatar" width={110} />
-          </Avatar>
+          <Avatars image={avatar} width={110} height={110} />
           <CircularProgress
               className="text-[#3361FF]"
               size={"130px"}
