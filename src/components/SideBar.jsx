@@ -21,7 +21,7 @@ import { IoMdAddCircle } from "react-icons/io";
 
 function SideBar() {
     return (
-        <div className="flex flex-col -z-10 p-6 justify-between mr-2 sticky left-0 top-0 border h-screen w-24 bg-[#f7f8fa]">
+        <div className="flex flex-col p-6 justify-between mr-2 sticky left-0 top-0 border h-screen w-24 bg-[#f7f8fa]">
             {/* Sidebar Navigations */}
             <div className="flex flex-col gap-3">
                 <CircleIconContainer icon={<FaCompass color="#3361ff" />} />
