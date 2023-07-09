@@ -39,8 +39,16 @@
         @apply bg-white text-[#7d8fb3] w-12 h-12 p-3 rounded-full;
     }
 
-    .darkgrayblue{
+    .darkgrayblue {
         @apply text-[#4d5e80];
+    }
+
+    .tabitem {
+        @apply flex gap-2 justify-center items-center;
+    }
+
+    .tab{
+        @apply font-semibold text-xs normal-case md:my-5
     }
 }
 

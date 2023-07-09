@@ -16,6 +16,9 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={inter.className}>
                 <NavBar />
+                <br />
+                <br />
+                <br />
                 <div className="flex">
                     <SideBar />
                     <SidePanel />

@@ -10,7 +10,7 @@ import { Avatar } from "@mui/material";
 import CircleIconContainer from "./CircleIconContainer";
 function NavBar() {
     return (
-        <div className="flex justify-between md:justify-between sticky top-0 z-50 h-16 md:h-20 w-full p-5 border items-center text-[#7d8fb3] !bg-[#f7f8fa] ">
+        <div className="flex justify-around fixed top-0 right-0 z-50 h-16 md:h-20 w-full p-5 border items-center text-[#7d8fb3] !bg-[#f7f8fa] ">
             {/* Menu Button */}
             <CircleIconContainer icon={<FiMenu />} />
 

@@ -27,7 +27,7 @@ import AvatarWithProgressBar from "./AvatarWithProgressBar";
 
 function SidePanel() {
     return (
-        <div className="flex flex-col gap-10 m-10 w-60 h-screen ">
+        <div className="hidden lg:flex flex-col gap-10 m-10 w-72 h-screen ">
             {/* Head */}
             <div className="">
                 <div className="flex justify-between">
