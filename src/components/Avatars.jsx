@@ -5,6 +5,7 @@ import React from "react";
 function Avatars({ image, width = 45, height = 45, dotColor }) {
     return (
         <div className="relative">
+            {/* if dotColor is passed, then it shows the dot badge */}
             {dotColor ? (
                 <div className={` absolute -top-2 right-1 z-10`}>
                     <svg
@@ -17,8 +18,10 @@ function Avatars({ image, width = 45, height = 45, dotColor }) {
                     </svg>
                 </div>
             ) : null}
+
+            {/* Avatar */}
             <Avatar src={image} sx={{ width: width, height: height }}>
-                <Image src={image} alt="avatar" />
+                <Image src={image} alt="avatar" loading="eager" />
             </Avatar>
         </div>
     );

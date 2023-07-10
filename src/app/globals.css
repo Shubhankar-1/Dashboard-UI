@@ -48,7 +48,7 @@
     }
 
     .tab{
-        @apply font-semibold text-xs normal-case md:my-5
+        @apply font-medium text-xs normal-case md:my-5
     }
 }
 

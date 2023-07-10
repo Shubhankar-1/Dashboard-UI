@@ -14,7 +14,6 @@ import avatar1 from "../assets/Avatar/Avatar1.jpg";
 import avatar3 from "../assets/Avatar/Avatar2.jpg";
 import avatar2 from "../assets/Avatar/Avatar3.jpg";
 import avatar4 from "../assets/Avatar/Avatar.jpg";
-import Image from "next/image";
 
 import { Badge } from "@mui/material";
 import { IoMdAddCircle } from "react-icons/io";

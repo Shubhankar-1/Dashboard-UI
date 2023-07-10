@@ -2,7 +2,6 @@
 import React from "react";
 import CircleIconContainer from "./CircleIconContainer";
 import avatar from "../assets/Avatar/Image.png";
-import Image from "next/image";
 
 import { Avatar, Badge } from "@mui/material";
 import { BsFillPersonFill, BsPhoneFill } from "react-icons/bs";

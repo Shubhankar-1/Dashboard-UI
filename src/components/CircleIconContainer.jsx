@@ -7,10 +7,12 @@ function CircleIconContainer({
     icon,
     notificationDotColor,
     size = "w-12 h-12",
+    textsize = "text-2xl",
 }) {
     return (
         <div
             className={`${size} hover:scale-[1.1] bg-white relative flex justify-center items-center rounded-full p-2 shadow-sm hover:shadow-md text-[#c3cad9] hover:text-[#8f95a1] !duration-0 !cursor-pointer`}>
+            {/* if notificationDotColor is provided then, it shows the dot badge */}
             {notificationDotColor ? (
                 <div className={` absolute -top-2 right-1`}>
                     <svg
@@ -25,7 +27,7 @@ function CircleIconContainer({
             ) : null}
 
             {/* <Icon  /> */}
-            <div className={` text-2xl`}>{icon}</div>
+            <div className={` ${textsize}`}>{icon}</div>
         </div>
     );
 }

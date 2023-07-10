@@ -41,11 +41,10 @@ function Base(props) {
         setValue(newValue);
     };
     return (
-        <div className="m-5 md:my-10 h-screen border rounded-xl">
+        <div className="m-5 relative md:my-10 h-full border rounded-xl">
             {/* Head */}
             <div className="relative flex justify-between items-center border-b lg:px-10">
                 <Tabs
-                    classes={{ fontSize: "18px" }}
                     className="md:h-20"
                     textColor="inherit"
                     value={value}
@@ -58,13 +57,13 @@ function Base(props) {
                     <Tab
                         label={
                             <div className="tabitem">
-                                <MdPlaylistAddCheck size={20} />
+                                <MdPlaylistAddCheck size={25} />
                                 List Tasks
                             </div>
                         }
                         id="tab-0"
                         className={`${
-                            value == 0 ? "text-[#3361ff]" : "text-[#7d8fb3]"
+                            value == 0 ? "text-[#3361ff]" : "text-[#233c6b]"
                         } tab`}
                     />
                     <Tab
@@ -76,7 +75,7 @@ function Base(props) {
                         }
                         id="tab-1"
                         className={`${
-                            value == 1 ? "text-[#3361ff]" : "text-[#7d8fb3]"
+                            value == 1 ? "text-[#3361ff]" : "text-[#233c6b]"
                         } tab`}
                     />
                     <Tab
@@ -88,7 +87,7 @@ function Base(props) {
                         }
                         id="tab-2"
                         className={`${
-                            value == 2 ? "text-[#3361ff]" : "text-[#7d8fb3]"
+                            value == 2 ? "text-[#3361ff]" : "text-[#233c6b]"
                         } tab`}
                     />
                     <Tab
@@ -100,7 +99,7 @@ function Base(props) {
                         }
                         id="tab-3"
                         className={`${
-                            value == 3 ? "text-[#3361ff]" : "text-[#7d8fb3]"
+                            value == 3 ? "text-[#3361ff]" : "text-[#233c6b]"
                         } tab`}
                     />
                     <Tab
@@ -112,7 +111,7 @@ function Base(props) {
                         }
                         id="tab-4"
                         className={`${
-                            value == 4 ? "text-[#3361ff]" : "text-[#7d8fb3]"
+                            value == 4 ? "text-[#3361ff]" : "text-[#233c6b]"
                         } tab`}
                     />
                     <Tab
@@ -124,7 +123,7 @@ function Base(props) {
                         }
                         id="tab-5"
                         className={`${
-                            value == 5 ? "text-[#3361ff]" : "text-[#7d8fb3]"
+                            value == 5 ? "text-[#3361ff]" : "text-[#233c6b]"
                         } tab`}
                     />
                 </Tabs>
@@ -145,8 +144,8 @@ function Base(props) {
                     </form>
                 </div>
             </div>
-
-            <div className="p-5">
+            <div className="lg:hidden absolute right-0 w-24 h-full bg-gradient-to-l from-white/80 to-transparent z-50"></div>
+            <div className="md:p-5 overflow-auto min-h-fit relative font-semibold">
                 <TabPanel value={value} index={0}>
                     List Tasks
                 </TabPanel>
