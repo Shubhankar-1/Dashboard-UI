@@ -11,7 +11,6 @@ import {
     MdSort,
 } from "react-icons/md";
 import MenuChip from "./MenuChip";
-import TabChip from "./TabChip";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineRise, AiOutlineSearch } from "react-icons/ai";
 import Board from "./Board";
@@ -45,7 +44,7 @@ function Base(props) {
             {/* Head */}
             <div className="relative flex justify-between items-center border-b lg:px-10">
                 <Tabs
-                    className="md:h-20"
+                    // className="md:!h-20"
                     textColor="inherit"
                     value={value}
                     onChange={handleChange}
@@ -144,8 +143,8 @@ function Base(props) {
                     </form>
                 </div>
             </div>
-            <div className="lg:hidden absolute right-0 w-24 h-full bg-gradient-to-l from-white/80 to-transparent z-50"></div>
-            <div className="md:p-5 overflow-auto min-h-fit relative font-semibold">
+            <div className="lg:hidden absolute right-0 w-5 h-full bg-gradient-to-l from-white/80 to-transparent z-30"></div>
+            <div className="md:p-5 overflow-auto min-h-fit relative font-semibold ">
                 <TabPanel value={value} index={0}>
                     List Tasks
                 </TabPanel>

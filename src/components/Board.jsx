@@ -117,7 +117,7 @@ const data = [
 
 function Board() {
     return (
-        <div className=" flex gap-5 justify-between w-full text-sm">
+        <div className=" flex gap-5 justify-between  text-sm">
             {/* To Do */}
             <div>
                 <TaskChip

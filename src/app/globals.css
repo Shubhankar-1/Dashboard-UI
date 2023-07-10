@@ -28,6 +28,13 @@
     html {
         @apply !scroll-smooth;
     }
+     .tabitem {
+        @apply !flex !gap-2 !justify-center !items-center;
+    }
+
+    .tab {
+        @apply !font-medium !text-xs !normal-case md:!my-5;
+    }
 }
 
 @layer components {
@@ -43,13 +50,7 @@
         @apply text-[#4d5e80];
     }
 
-    .tabitem {
-        @apply flex gap-2 justify-center items-center;
-    }
-
-    .tab{
-        @apply font-medium text-xs normal-case md:my-5
-    }
+   
 }
 
 @font-face {
