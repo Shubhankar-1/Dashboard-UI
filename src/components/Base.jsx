@@ -56,8 +56,8 @@ function Base(props) {
                     <Tab
                         label={
                             <div className="tabitem">
-                                <MdPlaylistAddCheck size={25} />
-                                List Tasks
+                                <MdDashboard size={20} />
+                                Boards
                             </div>
                         }
                         id="tab-0"
@@ -68,8 +68,8 @@ function Base(props) {
                     <Tab
                         label={
                             <div className="tabitem">
-                                <MdDashboard size={20} />
-                                Boards
+                                <MdPlaylistAddCheck size={25} />
+                                List Tasks
                             </div>
                         }
                         id="tab-1"
@@ -146,10 +146,10 @@ function Base(props) {
             <div className="lg:hidden absolute right-0 w-5 h-full bg-gradient-to-l from-white/80 to-transparent z-30"></div>
             <div className="md:p-5 overflow-auto min-h-fit relative font-semibold ">
                 <TabPanel value={value} index={0}>
-                    List Tasks
+                    <Board />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    <Board />
+                    List Tasks
                 </TabPanel>
                 <TabPanel value={value} index={2}>
                     Calendar

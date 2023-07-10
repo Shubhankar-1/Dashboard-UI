@@ -14,7 +14,7 @@ function TaskCard({
     return (
         <div className="mt-5 flex flex-col w-56 gap-2 border rounded-md bg-white font-light text-xs text-slate-400 ">
             {img && (
-                <div>
+                <div className="!rounded-md">
                     <Image
                         src={img}
                         // layout="responsive"
