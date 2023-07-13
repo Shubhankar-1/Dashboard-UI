@@ -7,7 +7,7 @@ import SidePanel from "@/components/SidePanel";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "Constructor",
+    title: "Dashboard UI",
     description: "app",
 };
 
