@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import Avatars from "./Avatars";
@@ -12,9 +13,9 @@ function TaskCard({
     nunmberOfDaysLeft,
 }) {
     return (
-        <div className="mt-5 flex flex-col w-56 gap-2 border rounded-md bg-white font-light text-xs text-slate-400 ">
+        <div className="mt-5 flex flex-col w-56 gap-2 border shadow-sm hover:shadow-lg !rounded-lg bg-white font-light text-xs text-slate-400 ">
             {img && (
-                <div className="!rounded-md">
+                <div className="!rounded-lg">
                     <Image
                         src={img}
                         // layout="responsive"
@@ -22,6 +23,7 @@ function TaskCard({
                         height={500}
                         alt="task image"
                         loading="eager"
+                        className="rounded-t-lg"
                     />
                 </div>
             )}

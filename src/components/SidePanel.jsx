@@ -43,8 +43,9 @@ function SidePanel() {
 
                 {/* User Info */}
                 <div className="flex flex-col justify-center items-center cursor-pointer">
+
                     {/* Avatar */}
-                    <AvatarWithProgressBar avatar={avatar} progress={75} />
+                    <AvatarWithProgressBar avatar="https://i.pravatar.cc/200" progress={75} />
 
                     <div className="flex flex-col gap-4 mt-8 text-center">
                         <div className="darkgrayblue font-bold">

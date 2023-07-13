@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import CircleIconContainer from "./CircleIconContainer";
 import { FiMoreHorizontal } from "react-icons/fi";
@@ -9,7 +10,7 @@ function TaskChip({ title, numberOfTasks, ribboncolor }) {
             <div
                 className={`${ribboncolor} absolute left-0 h-8 w-[3px] rounded-md`}></div>
             <div className="flex gap-4 items-center">
-                {title}
+                <div>{title}</div>
                 <CircleIconContainer
                     icon={numberOfTasks}
                     textsize="text-xs text-gray-600"

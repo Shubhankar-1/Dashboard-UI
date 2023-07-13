@@ -21,7 +21,7 @@ function Avatars({ image, width = 45, height = 45, dotColor }) {
 
             {/* Avatar */}
             <Avatar src={image} sx={{ width: width, height: height }}>
-                <Image src={image} alt="avatar" loading="eager" />
+                {/* <Image src={image} alt="avatar"  /> */}
             </Avatar>
         </div>
     );

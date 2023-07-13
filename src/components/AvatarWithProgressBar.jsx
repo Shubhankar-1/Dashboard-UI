@@ -8,29 +8,20 @@ function AvatarWithProgressBar({ avatar, progress }) {
             {/* Avatar Image */}
             <Avatars image={avatar} width={110} height={110} />
 
-            {/* Progress Bar */}
+            {/* Progress Bar Around Avatar*/}
             <CircularProgress
                 className="text-[#3361FF]"
                 size={"130px"}
-                value={progress}
-                determinate
-                thickness="0.8"
+                value={80}
+                variant="indeterminate"
+                thickness={0.8}
                 style={{
                     transform: "scaleX(-1) rotate(-90deg)",
                     position: "absolute",
                     top: -10,
                     left: -10,
-                }}>
-                <Badge
-                    color="primary"
-                    badgeContent="2"
-                    style={{
-                        position: "absolute",
-                        transform: "translate(-50%, -50%)",
-                        zIndex: 10,
-                    }}
-                />
-            </CircularProgress>
+                }}
+            />
         </div>
     );
 }

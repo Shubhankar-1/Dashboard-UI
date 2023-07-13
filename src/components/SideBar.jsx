@@ -21,7 +21,7 @@ import Avatars from "./Avatars";
 
 function SideBar() {
     return (
-        <div className="hidden md:flex flex-col p-6 justify-between mr-2 sticky left-0 top-0 border h-screen w-24 bg-[#f7f8fa]">
+        <div className="hidden md:flex flex-col p-6 justify-between mr-2 sticky left-0 top-0 bottom-0 border h-screen w-24 bg-[#f7f8fa]">
             {/* Sidebar Navigations */}
             <div className="flex flex-col gap-3">
                 <CircleIconContainer icon={<FaCompass color="#3361ff" />} />
@@ -37,10 +37,10 @@ function SideBar() {
 
             {/* Avatars */}
             <div className=" flex flex-col gap-3">
-                <Avatars image={avatar2} dotColor="#3361ff" />
-                <Avatars image={avatar3} />
-                <Avatars image={avatar1} />
-                <Avatars image={avatar4} />
+                <Avatars image="https://i.pravatar.cc/65" dotColor="#3361ff" />
+                <Avatars image="https://i.pravatar.cc/85" />
+                <Avatars image="https://i.pravatar.cc/75" />
+                <Avatars image="https://i.pravatar.cc/79" />
                 <CircleIconContainer icon={<IoMdAddCircle />} />
             </div>
         </div>

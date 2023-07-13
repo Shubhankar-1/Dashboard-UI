@@ -16,19 +16,20 @@ import { AiOutlineRise, AiOutlineSearch } from "react-icons/ai";
 import Board from "./Board";
 
 function TabPanel(props) {
-    const { children, value, index, ...other } = props;
+    const { children, value, index } = props;
     return (
         <div
             role="tabpanel"
             hidden={value !== index}
             id={`tabpanel-${index}`}
-            aria-labelledby={`tab-${index}`}
-            {...other}>
-            {value === index && (
-                <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
-                </Box>
-            )}
+            aria-labelledby={`tab-${index}`}>
+            <div>
+                {value === index && (
+                    <Box sx={{ p: 3 }}>
+                        <div>{children}</div>
+                    </Box>
+                )}
+            </div>
         </div>
     );
 }
@@ -51,7 +52,7 @@ function Base(props) {
                     aria-label="Tabs"
                     variant="scrollable"
                     // scrollButtons="true"
-                    allowScrollButtonsMobile="true"
+                    allowScrollButtonsMobile={true}
                     selectionFollowsFocus>
                     <Tab
                         label={
@@ -143,10 +144,16 @@ function Base(props) {
                     </form>
                 </div>
             </div>
+
+            {/* White gradient for right side of the mobile screen to show scrollable Dashboard  */}
             <div className="lg:hidden absolute right-0 w-5 h-full bg-gradient-to-l from-white/80 to-transparent z-30"></div>
+
+            {/* Tab content */}
             <div className="md:p-5 overflow-auto min-h-fit relative font-semibold ">
                 <TabPanel value={value} index={0}>
-                    <Board />
+                    <div>
+                        <Board />
+                    </div>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     List Tasks
